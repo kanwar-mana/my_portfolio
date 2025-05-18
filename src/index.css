@@ -7,10 +7,12 @@ body {
   margin: 0;
   font-family: "Open Sans", sans-serif;
   background-color: #000000;
+  transition: background-color 0.5s ease, color 0.5s ease;
 }
 body.light-mode {
   background-color: #f5f5f5;
   color: #000000;
+  transition: background-color 0.5s ease, color 0.5s ease;
 }
 body.light-mode .container {
   background: transparent;
@@ -236,6 +238,7 @@ body.light-mode .contact-title {
   cursor: pointer;
   box-shadow: 0 0 0px 0px rgba(255, 255, 255, 0.152);
   line-height: 1;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 .input {
@@ -928,4 +931,52 @@ body.light-mode .contact-title {
 .contact-submit-btn:hover {
   background: linear-gradient(to right, #00c9ff, #2fffcb);
   color: #fff;
+}
+
+/* Add transition for all elements that change during theme switch */
+body.light-mode .container,
+body.light-mode .main,
+body.light-mode .header,
+body.light-mode .nav-bar,
+body.light-mode .header-two,
+body.light-mode .header-text-two,
+body.light-mode .social-button,
+body.light-mode .contact-section,
+body.light-mode .contact-info-box,
+body.light-mode .contact-form,
+body.light-mode .contact-input,
+body.light-mode .contact-textarea {
+  transition: all 0.3s ease;
+}
+
+/* Add transition for the toggle button */
+.toggle {
+  background-color: #121212;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  box-shadow: 0 0 0px 0px rgba(255, 255, 255, 0.152);
+  line-height: 1;
+  transition: background-color 0.5s ease, box-shadow 0.5s ease;
+}
+
+body.light-mode .toggle {
+  background: rgba(255,255,255,0.8);
+  border: 1.5px solid #e0e7ef;
+  box-shadow: 0 2px 8px #7f9cf522;
+  transition: background-color 0.5s ease, border-color 0.5s ease, box-shadow 0.5s ease;
+}
+
+/* Add transition for icons */
+.icon--moon,
+.icon--sun {
+  transition: transform 0.5s ease, color 0.5s ease;
+}
+
+body.light-mode .icon--moon svg,
+body.light-mode .icon--sun svg {
+  transition: color 0.5s ease;
 }

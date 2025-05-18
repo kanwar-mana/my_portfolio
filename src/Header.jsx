@@ -60,13 +60,31 @@ function Header() {
     document.body.classList.toggle("light-mode", isLightMode);
   }, [isLightMode]);
 
+  const handleSmoothScroll = (e, targetId) => {
+    e.preventDefault();
+    const targetElement = document.getElementById(targetId.toLowerCase());
+    if (targetElement) {
+      targetElement.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+      });
+    }
+  };
+
   return (
     <>
       <div className="header">
         <img data-aos="fade-up" src="./logo.png" alt="" />
         <div data-aos="fade-up" className="nav-bar">
           {t.nav.map((item, i) => (
-            <a key={item} href={`#${item.toLowerCase()}`}>{item}</a>
+            <a 
+              key={item} 
+              href={`#${item.toLowerCase()}`}
+              onClick={(e) => handleSmoothScroll(e, item)}
+              className="smooth-scroll"
+            >
+              {item}
+            </a>
           ))}
         </div>
 

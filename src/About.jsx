@@ -93,8 +93,7 @@ function About() {
   const tr = t[lang];
   return (
     <>
-      <div className="about">
-      
+      <div id="about" className="about">
         <div className="about-text">
           <p>{tr.about}</p>
           <p>
@@ -102,7 +101,7 @@ function About() {
             <i>{tr.junior}</i> . <br />
             {tr.more}
             <i>{tr.years}</i> {tr.experience} <br />
-            <a id="btn" href="/resume.pdf" download onChange={(e)=>e.preventDefault}>
+            <a id="btn" href="resume.pdf" download onChange={(e)=>e.preventDefault}>
               <i className="bi bi-cloud-arrow-down-fill"></i>{tr.download}
             </a>
           </p>
@@ -171,7 +170,7 @@ function About() {
             </div>
           </div>
           <div data-aos="zoom-in" className="profile">
-            <img src="/profile-pic.png" alt="" />
+            <img src="profile-pic.png" alt="" />
             <div id="back-design"></div>
           </div>
         </div>

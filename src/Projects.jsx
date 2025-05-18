@@ -38,7 +38,7 @@ function Projects() {
   const tr = t[lang];
   return (
     <>
-      <div className="project">
+      <div id="project" className="project">
         <p id="titles">{tr.projects}</p>
         {[1, 2, 3].map((_, idx) => (
           <div className="projN" key={idx}>
@@ -71,15 +71,15 @@ function Projects() {
                   </div>
                 </div>
                 <div className="pro-img">
-                  <img id="img1" src="/sun.png" alt="" />
-                  <img id="img2" src="/sunmob.png" alt="" />
+                  <img id="img1" src="sun.png" alt="" />
+                  <img id="img2" src="sunmob.png" alt="" />
                 </div>
               </>
             ) : (
               <>
                 <div className="pro-img">
-                  <img id="img1" src="/sun.png" alt="" />
-                  <img id="img2" src="/sunmob.png" alt="" />
+                  <img id="img1" src="sun.png" alt="" />
+                  <img id="img2" src="sunmob.png" alt="" />
                 </div>
                 <div className="pro-text">
                   <p id="pro-nm">{tr.sundown}</p>

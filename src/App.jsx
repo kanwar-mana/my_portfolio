@@ -21,7 +21,7 @@ function App() {
 
   return (
     <LanguageProvider>
-      
+      <div id="home">
         <Lottie data-aos="zoom-in" class="anim" animationData={Anim} />
         <div className="main">
           <Header />
@@ -29,6 +29,7 @@ function App() {
           <Projects />
           <Contact />
         </div>
+      </div>
     </LanguageProvider>
   );
 }
