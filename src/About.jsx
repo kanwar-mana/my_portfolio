@@ -5,7 +5,7 @@ import Lottie from "lottie-react";
 import AnimBackground from "./assets/AnimBackground.json";
 const t = {
   en: {
-    about: ".../About...",
+    about: "About",
     hello: "Hello I'm Kanwer. I'm ",
     junior: "Junior Web Developer",
     more: "More than ",
@@ -22,27 +22,9 @@ const t = {
     devops: "DevOps",
     work: "Work",
     workList: [
-      {
-        period: "2022-",
-        duration: "1 year 2 month",
-        company: "ITHUB",
-        title: "Front-end Developer | React Native",
-      },
-      {
-        period: "2022-2023",
-        company: "VK .Inc",
-        title: "Front-end Developer | Native",
-      },
-      {
-        period: "2022-2024",
-        company: "ITHUB",
-        title: "Backend Developer | React Native",
-      },
-      {
-        period: "2024-2025",
-        company: "Colmia",
-        title: "Full-Stack Developer | React & Python",
-      },
+     {
+      company: "N/A"
+     }
     ],
   },
   ur: {
@@ -95,7 +77,7 @@ function About() {
     <>
       <div id="about" className="about">
         <div className="about-text">
-          <p>{tr.about}</p>
+          <p id="about-title">{tr.about}</p>
           <p>
             {tr.hello}
             <i>{tr.junior}</i> . <br />
@@ -170,11 +152,11 @@ function About() {
             </div>
           </div>
           <div data-aos="zoom-in" className="profile">
-            <img src="profile-pic.png" alt="" />
+            <img src="profile-pic.webp" alt="" />
             <div id="back-design"></div>
           </div>
         </div>
-        <div className="work">
+        {/* <div className="work">
           <p id="work-heading">{tr.work}</p>
           <div className="work-detail">
             {tr.workList.map((item, idx) => (
@@ -188,7 +170,7 @@ function About() {
               </div>
             ))}
           </div>
-        </div>
+        </div> */}
       </div>
     </>
   );

@@ -10,7 +10,7 @@ const translations = {
     nav: ["HOME", "ABOUT", "PROJECT", "CONTACT"],
     lang: "Eng",
     langAlt: "Urd",
-    frontend: "Front-end",
+    frontend: "Frontend",
     projects: "Projects",
     developer: "Developer",
     goal: "Student of",
@@ -74,7 +74,7 @@ function Header() {
   return (
     <>
       <div className="header">
-        <img data-aos="fade-up" src="logo.png" alt="" />
+        <img data-aos="fade-up" src="logo.webp" alt="" />
         <div data-aos="fade-up" className="nav-bar">
           {t.nav.map((item, i) => (
             <a 
@@ -161,23 +161,23 @@ function Header() {
 
       <div className="social-button">
         <div className="social-one">
-          <a href="">
+          <a href="https://github.com/kanwar-mana">
             <i className="fa-brands fa-github"></i>&nbsp;&nbsp;&nbsp;{t.github}
           </a>
-          <a href="">
+          <a href="https://www.linkedin.com/in/kanwer-abdull-rahman/">
             <i className="fa-brands fa-linkedin-in"></i>&nbsp;&nbsp;&nbsp;{t.linkedin}
           </a>
         </div>
         <div className="social-two">
-          <a href="">
+          <a href="https://t.me/Kanwer7172">
             <i className="fa-brands fa-telegram"></i>&nbsp;&nbsp;&nbsp;{t.telegram}
           </a>
         </div>
         <div className="social-three">
-          <a href="">
+          <a href="https://www.facebook.com/kanwar.abdullrahman.9">
             <i className="fa-brands fa-facebook-f"></i>&nbsp;&nbsp;&nbsp;{t.facebook}
           </a>
-          <a href="">
+          <a href="https://www.instagram.com/mana.ji_/">
             <i className="fa-brands fa-instagram"></i>&nbsp;&nbsp;&nbsp;{t.instagram}
           </a>
         </div>

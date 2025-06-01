@@ -71,16 +71,16 @@ function Projects() {
                   </div>
                 </div>
                 <div className="pro-img">
-                  <img id="img1" src="sun.png" alt="" />
-                  <img id="img2" src="sunmob.png" alt="" />
+                  <img id="img1" src="sun.webp" alt="" />
+                  <img id="img2" src="sunmob.webp" alt="" />
                 </div>
               </div>
               
         {/* 2nd project */}
               <div className="project-container">
                 <div className="pro-img">
-                  <img id="img1" src="ecom1.png" alt="" />
-                  <img id="img2" src="ecom.png" alt="" />
+                  <img id="img1" src="ecom1.webp" alt="" />
+                  <img id="img2" src="ecom.webp" alt="" />
                 </div>
                 <div className="pro-text">
                   <p id="pro-nm">Ecommerce</p>
@@ -139,8 +139,8 @@ function Projects() {
                   </div>
                 </div>
                 <div className="pro-img">
-                  <img id="img1" src="portfolio.png" alt="" />
-                  <img id="img2" src="portfolio1.png" alt="" />
+                  <img id="img1" src="portfolio.webp" alt="" />
+                  <img id="img2" src="portfolio1.webp" alt="" />
                 </div>
               </div>
           </div>
