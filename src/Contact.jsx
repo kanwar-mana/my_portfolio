@@ -30,7 +30,8 @@ const t = {
     send: "Send",
     name: "Kanwer",
     surname: "Abdull Rahman",
-    role: "Frontend developer",
+    role: "Frontend",
+    role2: "Developer",
     social: {
       github: "Github",
       linkedin: "Linkedin",
@@ -68,7 +69,9 @@ export default function Contact() {
   const { lang } = useLanguage();
   const tr = t[lang];
   return (
+    <> 
     <section id="contact" className="contact-section">
+      <h2 className="contact-title">{tr.contacts}</h2>
       <div className="contact-container">
         {/* Left column */}
         <div className="contact-left">
@@ -78,6 +81,8 @@ export default function Contact() {
               <br />
               <div className="contact-role">
                 {tr.role}
+                <br />
+                {tr.role2}
                 <p>{tr.surname}</p>
               </div>
             </h1>
@@ -91,7 +96,7 @@ export default function Contact() {
         </div>
         {/* Right column */}
         <div className="contact-right">
-          <h2 className="contact-title">{tr.contacts}</h2>
+          
           <nav className="contact-nav">
             {tr.nav.map((item, i) => (
               <a key={item} href={navLinks[i].href} className="contact-nav-link">
@@ -134,5 +139,6 @@ export default function Contact() {
         ))}
       </div>
     </section>
+    </>
   );
 } 

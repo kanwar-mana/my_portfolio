@@ -112,28 +112,28 @@ function About() {
               <p id="heading">
                 {tr.frontend} <br />
               </p>
+              <button id="skill-btn">HTML</button>
+              <button id="skill-btn">CSS</button>
               <button id="skill-btn">React</button>
-              <button id="skill-btn">React</button>
-              <button id="skill-btn">React</button>
-              <button id="skill-btn">React</button>
-              <button id="skill-btn">React</button>
+              <button id="skill-btn">JavaScript</button>
+              <button id="skill-btn">Tailwind CSS</button>
             </div>
             <div data-aos="fade-up" className="skill-sec">
               <div className="skill-sec-one">
                 <p id="heading">
                   {tr.styles} <br />
                 </p>
-                <button id="skill-btn">React</button>
-                <button id="skill-btn">React</button>
-                <button id="skill-btn">React</button>
-                <button id="skill-btn">React</button>
-                <button id="skill-btn">React</button>
+                <button id="skill-btn">CSS</button>
+                <button id="skill-btn">Tailwind CSS</button>
+                <button id="skill-btn">BootStrap</button>
+                <button id="skill-btn">Swiper JS</button>
+
               </div>
               <div className="git">
-                <button id="git-btn">
+                <button id="git-btn" onClick={()=>window.open("https://github.com/kanwar-mana", "_blank")}>
                   <i className="fa-brands fa-github"></i>
                 </button>
-                <div id="git-btn-two">
+                <div id="git-btn-two" onClick={()=>window.open("https://github.com/kanwar-mana", "_blank")}>
                   <i className="fa-solid fa-up-right-from-square"></i>
                 </div>
               </div>
@@ -142,11 +142,11 @@ function About() {
               <p id="heading">
                 {tr.backend} <br />
               </p>
-              <button id="skill-btn">React</button>
-              <button id="skill-btn">React</button>
-              <button id="skill-btn">React</button>
-              <button id="skill-btn">React</button>
-              <button id="skill-btn">React</button>
+              <button id="skill-btn">Node.js</button>
+              <button id="skill-btn">JavaScript</button>
+              <button id="skill-btn">Python</button>
+              <button id="skill-btn">MongoDb</button>
+              <button id="skill-btn">Express</button>
             </div>
             <div data-aos="fade-up" className="devop-text">
               <p>

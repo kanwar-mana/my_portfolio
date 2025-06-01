@@ -39,29 +39,29 @@ function Projects() {
   return (
     <>
       <div id="project" className="project">
-        <p id="titles">{tr.projects}</p>
-        {[1, 2, 3].map((_, idx) => (
-          <div className="projN" key={idx}>
-            {idx % 2 === 0 ? (
-              <>
+        <p id="titles">Projects</p>
+        {/* 1st project */}
+          <div className="projN">
+            
+              <div className="project-container">
                 <div className="pro-text">
-                  <p id="pro-nm">{tr.sundown}</p>
+                  <p id="pro-nm">Sundown</p>
                   <div className="pro-btn">
-                    <button>{tr.next}</button>
-                    <button>{tr.next}</button>
-                    <button>{tr.react}</button>
-                    <button>{tr.js}</button>
+                    <button>Next.js</button>
+                    <button>React.js</button>
+                    <button>JavaScript.js</button>
+                    <button>CSS</button>
                   </div>
                   <p id="pro-detail">
-                    {tr.developed}
-                    <i>{tr.frontend}</i> {tr.toShow}
+                  Developed a 
+                    <i>frontend application</i> to show design capabilities
                     <br />
-                    {tr.use}
-                    <i> {tr.libraries} </i> {tr.for}
+                    Use the 
+                    <i> Locomotive and Swiper JavaScript </i> library for smooth scrolling and beautiful swiping effects
                     <br />
-                    {tr.implement}
+                    Implement animation with combination of CSS & JavaScript
                   </p>
-                  <div className="git">
+                  <div className="git" onClick={()=>window.open("http://sundownss.netlify.app/")}>
                     <button id="git-btn">
                       <i className="fa-brands fa-github"></i>
                     </button>
@@ -74,31 +74,32 @@ function Projects() {
                   <img id="img1" src="sun.png" alt="" />
                   <img id="img2" src="sunmob.png" alt="" />
                 </div>
-              </>
-            ) : (
-              <>
+              </div>
+              
+        {/* 2nd project */}
+              <div className="project-container">
                 <div className="pro-img">
-                  <img id="img1" src="sun.png" alt="" />
-                  <img id="img2" src="sunmob.png" alt="" />
+                  <img id="img1" src="ecom1.png" alt="" />
+                  <img id="img2" src="ecom.png" alt="" />
                 </div>
                 <div className="pro-text">
-                  <p id="pro-nm">{tr.sundown}</p>
+                  <p id="pro-nm">Ecommerce</p>
                   <div className="pro-btn">
-                    <button>{tr.next}</button>
-                    <button>{tr.next}</button>
-                    <button>{tr.react}</button>
-                    <button>{tr.js}</button>
+                    <button>HTML</button>
+                    <button>CSS</button>
+                    <button>JavaScript</button>
+                    
                   </div>
                   <p id="pro-detail">
-                    {tr.developed}
-                    <i>{tr.frontend}</i> {tr.toShow}
+                  A full-featured Ecommerce application enabling users to register, authenticate, and manage their order product seamlessly. <br />
+                  Developed the<i>front-end using HTML and CSS,</i> creating a responsive and intuitive user interface
                     <br />
-                    {tr.use}
-                    <i> {tr.libraries} </i> {tr.for}
+                    Implemented user authentication and authorization using 
+                    <i>Appwrite </i> , ensuring secure access to the application. 
                     <br />
-                    {tr.implement}
+                    Managed the backend entirely with Appwrite, handling data storage, retrieval, and user management efficiently. 
                   </p>
-                  <div className="git">
+                  <div className="git" onClick={()=>window.open("https://jakum.netlify.app/","_blank")}>
                     <button id="git-btn">
                       <i className="fa-brands fa-github"></i>
                     </button>
@@ -107,10 +108,43 @@ function Projects() {
                     </div>
                   </div>
                 </div>
-              </>
-            )}
+              </div>
+              {/* 3rd project */}
+              <div className="project-container">
+                <div className="pro-text">
+                  <p id="pro-nm">Portfolio</p>
+                  <div className="pro-btn">
+                    <button>HTML</button>
+                    <button>CSS</button>
+                    <button>JavaScript</button>
+                    <button>React.js</button>
+                  </div>
+                  <p id="pro-detail">
+                  Developed a 
+                    <i>portfolio website</i> to showcase my skills and projects
+                    <br /> 
+                    Implemented a responsive and intuitive user interface using 
+                    <i> HTML and CSS </i>
+                    <br />
+                    Implemented a smooth and responsive navigation menu using 
+                    <i> JavaScript </i>
+                  </p>
+                  <div className="git" onClick={()=>window.open("https://kanwar-mana.github.io/my_portfolio/","_blank")}>
+                    <button id="git-btn">
+                      <i className="fa-brands fa-github"></i>
+                    </button>
+                    <div id="git-btn-two">
+                      <i className="fa-solid fa-up-right-from-square"></i>
+                    </div>
+                  </div>
+                </div>
+                <div className="pro-img">
+                  <img id="img1" src="portfolio.png" alt="" />
+                  <img id="img2" src="portfolio1.png" alt="" />
+                </div>
+              </div>
           </div>
-        ))}
+        
       </div>
     </>
   );

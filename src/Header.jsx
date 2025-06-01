@@ -13,10 +13,10 @@ const translations = {
     frontend: "Front-end",
     projects: "Projects",
     developer: "Developer",
-    goal: "My goal is to ",
-    goal1: "write maintainable, clean",
-    goal2: "and ",
-    goal3: "understandable code",
+    goal: "Student of",
+    goal1: "Computer Science",
+    goal2: "at ",
+    goal3: "UET Taxila",
     goal4: "to process development was enjoyable",
     github: "Github",
     linkedin: "Linkedin",
@@ -74,7 +74,7 @@ function Header() {
   return (
     <>
       <div className="header">
-        <img data-aos="fade-up" src="./logo.png" alt="" />
+        <img data-aos="fade-up" src="logo.png" alt="" />
         <div data-aos="fade-up" className="nav-bar">
           {t.nav.map((item, i) => (
             <a 
