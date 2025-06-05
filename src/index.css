@@ -104,25 +104,35 @@ body.light-mode #p-two-one {
 body.light-mode .contact-section {
   background: rgba(255,255,255,0.85);
   color: #000000;
-  box-shadow: 0 8px 40px 0 #00000022;
+  box-shadow: 0 4px 32px 0 #7f9cf53b;
+  backdrop-filter: blur(16px);
   border-radius: 2rem;
-  backdrop-filter: blur(24px);
   border: 1.5px solid #e0e7ef;
+  .contact-name{
+    color: #121212;
+  }
+  .contact-role{
+    color: #00eaff;
+  }
 }
 body.light-mode .contact-info-box,
 body.light-mode .contact-form {
   background: rgba(255,255,255,0.7);
   border-color: #e0e7ef;
   color: #000000;
-  box-shadow: 0 2px 16px 0 #00000022;
+  box-shadow: 0 4px 32px 0 #7f9cf53b;
   backdrop-filter: blur(16px);
+  .contact-info-title{
+    color: #000000;
+  }
 }
 body.light-mode .contact-input,
 body.light-mode .contact-textarea {
   background: rgba(255,255,255,0.9);
   color: #000000;
   border-color: #c7d2fe;
-  box-shadow: 0 1px 6px 0 #00000011;
+  box-shadow: 0 4px 32px 0 #7f9cf53b;
+  backdrop-filter: blur(16px);
 }
 body.light-mode .contact-input:focus,
 body.light-mode .contact-textarea:focus {
@@ -143,11 +153,15 @@ body.light-mode .contact-submit-btn:hover {
 }
 body.light-mode .contact-social-btn {
   border-color: #e0e7ef;
-  color: #5f6fff;
+  color: #121212;
+  border: none;
   background: rgba(255,255,255,0.8);
-  box-shadow: 0 1px 8px 0 #7f9cf522;
-  backdrop-filter: blur(8px);
+  box-shadow: 0 4px 32px 0 #7f9cf53b;
+  backdrop-filter: blur(16px);
   transition: border-color 0.2s, color 0.2s, background 0.2s, box-shadow 0.2s;
+  i{
+    color: #000000;
+  }
 }
 body.light-mode .contact-social-btn:hover {
   background: #eaf1fb;

@@ -24,7 +24,7 @@ const t = {
     site: "Site",
     handcrafted: "Handcrafted by ME /",
     designed: "Designed by ME /",
-    powered: "Powered by NextJs",
+    powered: "Powered by ReactJs",
     email: "Your email",
     message: "Your message",
     send: "Send",
