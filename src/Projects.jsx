@@ -54,7 +54,7 @@ function Projects() {
                   </div>
                   <p id="pro-detail">
                   Developed a 
-                    <i>frontend application</i> to show design capabilities
+                    <i> frontend application</i> to show design capabilities
                     <br />
                     Use the 
                     <i> Locomotive and Swiper JavaScript </i> library for smooth scrolling and beautiful swiping effects
@@ -92,10 +92,10 @@ function Projects() {
                   </div>
                   <p id="pro-detail">
                   A full-featured Ecommerce application enabling users to register, authenticate, and manage their order product seamlessly. <br />
-                  Developed the<i>front-end using HTML and CSS,</i> creating a responsive and intuitive user interface
+                  Developed the<i> front-end using HTML and CSS,</i> creating a responsive and intuitive user interface
                     <br />
                     Implemented user authentication and authorization using 
-                    <i>Appwrite </i> , ensuring secure access to the application. 
+                    <i> Appwrite </i> , ensuring secure access to the application. 
                     <br />
                     Managed the backend entirely with Appwrite, handling data storage, retrieval, and user management efficiently. 
                   </p>
@@ -121,13 +121,13 @@ function Projects() {
                   </div>
                   <p id="pro-detail">
                   Developed a 
-                    <i>portfolio website</i> to showcase my skills and projects
+                    <i> portfolio website</i> to showcase my skills and projects
                     <br /> 
                     Implemented a responsive and intuitive user interface using 
                     <i> HTML and CSS </i>
                     <br />
-                    Implemented a smooth and responsive navigation menu using 
-                    <i> JavaScript </i>
+                    Implemented a smooth and responsive navigation menu using
+                    <i>  JavaScript </i>
                   </p>
                   <div className="git" onClick={()=>window.open("https://kanwar-mana.github.io/my_portfolio/","_blank")}>
                     <button id="git-btn">

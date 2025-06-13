@@ -70,7 +70,7 @@ function Header() {
       });
     }
   };
-
+let proj='PROJECT';
   return (
     <>
       <div className="header">
@@ -137,10 +137,17 @@ function Header() {
             <GradientText children={t.frontend} className="p" />
           </div>
           <div className="two-btn">
-            <button id="proj">
+            <button id="proj"
+            href={`#${proj.toLowerCase()}`}
+            onClick={(e) => handleSmoothScroll(e, proj)}
+            >
+
               <i>{t.projects}</i>
             </button>
-            <button id="proj-1">
+            <button id="proj-1" 
+            href={`#${proj.toLowerCase()}`}
+            onClick={(e) => handleSmoothScroll(e, proj)}
+            >
               <i className="fa-solid fa-arrow-right"></i>
             </button>
           </div>

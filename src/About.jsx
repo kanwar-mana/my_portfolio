@@ -15,7 +15,7 @@ const t = {
     tech: "Some of my favorite ",
     tech2: "technology,",
     tech3: "topics and tools",
-    tech4: "that i used",
+    tech4: " that i used",
     frontend: "Front-end",
     styles: "Styles",
     backend: "Back-end",
@@ -128,7 +128,6 @@ function About() {
               <button id="skill-btn">JavaScript</button>
               <button id="skill-btn">Python</button>
               <button id="skill-btn">MongoDb</button>
-              <button id="skill-btn">Express</button>
             </div>
             <div data-aos="fade-up" className="devop-text">
               <p>
@@ -137,9 +136,9 @@ function About() {
                   {tr.tech2},<br />
                   {tr.tech3}
                 </i>
-                {tr.tech4}
+                 {tr.tech4}
               </p>
-              <div className="dev-ops">
+              {/* <div className="dev-ops">
                 <p id="heading">
                   {tr.devops} <br />
                 </p>
@@ -148,7 +147,7 @@ function About() {
                 <button id="skill-btn">React</button>
                 <button id="skill-btn">React</button>
                 <button id="skill-btn">React</button>
-              </div>
+              </div> */}
             </div>
           </div>
           <div data-aos="zoom-in" className="profile">

@@ -638,19 +638,19 @@ body.light-mode .contact-title {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin-top: 4rem;
+  margin-top: 3rem;
   margin-bottom: 4rem;
 }
 #titles {
   font-size: 5vw;
   font-family: "Fira Code", monospace;
   font-weight: 600;
+  margin-top: 6rem;
 }
 .projN {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin-top: 5rem;
   margin-bottom: 4rem;
 }
 .pro-text {
